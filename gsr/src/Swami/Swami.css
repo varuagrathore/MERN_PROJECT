@@ -1,0 +1,99 @@
+/* Common styles for both small and large devices */
+.swami {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center; /* Center text content horizontally */
+}
+
+.heading {
+  margin-top: 40px; /* Adjust spacing */
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ddd; /* Light gray text color */
+}
+
+.aukaat {
+  margin: 20px;
+  padding: 10px;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #ddd; /* Light gray text color */
+}
+
+.swamiimg {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ddd; /* Light gray border */
+}
+
+.born {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa; /* Medium gray text color */
+}
+
+.top {
+  margin: 20px;
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ddd; /* Light gray text color */
+  text-align: center;
+}
+
+.quotes {
+  flex: 9;
+  margin: 20px;
+  display: flex;
+  flex-direction: column; /* Display quotes in a column */
+  align-items: center;
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.writing {
+  font-family: 'Anuphan', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ddd; /* Light gray text color */
+  margin-bottom: 10px; /* Add margin between quotes */
+}
+
+.moreInfo {
+  margin: 20px;
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 10px;
+}
+
+.moreInfo h2 {
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ddd; /* Light gray text color */
+  margin-bottom: 10px;
+}
+
+.moreInfo p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd; /* Light gray text color */
+}
+
+/* CSS for small devices */
+@media (max-width: 800px) {
+  .qm {
+    font-size: 180%;
+  }
+
+  /* Adjust image margin for small screens */
+  .qimg {
+    margin: 10px;
+  }
+}

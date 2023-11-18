@@ -1,0 +1,108 @@
+
+.topbar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(44, 43, 43); 
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 200;
+  justify-content: flex-start; 
+}
+
+.topList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topListItem {
+  margin: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none; 
+  color: white; 
+  transition: color 0.3s ease-in; 
+}
+
+.topListItem:hover {
+  color: pink; 
+  
+}
+
+/* CSS for small devices */
+@media (max-width: 800px) {
+  .topbar {
+    justify-content: space-between; 
+  }
+
+  .topList {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 20px;
+    color: white; 
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .topcenter {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: black; 
+    z-index: 100;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .topbar.active .topcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .topList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topListItem {
+    margin: 10px 0;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: none;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+
+@media (min-width: 801px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .topcenter {
+    display: flex;
+    justify-content: center;
+  }
+
+  .topListItem {
+    margin-right: 40px; 
+  }
+}

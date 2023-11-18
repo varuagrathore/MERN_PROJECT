@@ -1,0 +1,29 @@
+/* Common styles for both small and large devices */
+.life {
+  display: flex;
+  margin: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 5px;
+  text-align: justify;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  background-color: #333; /* Black background */
+  border: 1px solid #555; /* Light gray border */
+  color: #fff; /* White text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* CSS for small devices */
+@media (max-width: 800px) {
+  .mere::first-letter {
+    font-size: 400%;
+    color: #8A2BE2;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  /* Increase font size and add padding for better readability */
+  .life {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

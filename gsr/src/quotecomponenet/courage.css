@@ -1,0 +1,67 @@
+.Cinspire {
+    margin: 20px;
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Cinsquote {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .Cstart {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Csuccess {
+    margin: 5px;
+    padding: 2px;
+    font-family: 'Anuphan', sans-serif;
+    text-decoration: none;
+  }
+  
+  .Cimgsucc,
+  .Cimgsuccal,
+  .Cimg,
+  .Mimg {
+    width: 75%;
+    max-height: 500px; /* Adjust the max-height as per your preference */
+    /* object-fit: cover;  */
+    justify-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+  
+  .cour {
+    padding: 5px;
+    color: white;
+    font-size: 80px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .co {
+    text-align: center;
+  }
+  
+  /* CSS for small devices */
+  @media (max-width: 800px) {
+    .cour {
+      font-size: 25px;
+      margin: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .Csuccess {
+      font-size: 16px;
+    }
+  }
+  

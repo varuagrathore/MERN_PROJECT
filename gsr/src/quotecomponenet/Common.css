@@ -1,0 +1,143 @@
+/* Common styles for both small and large devices */
+.inspire {
+    margin: 20px;
+    padding: 10px;
+    text-align: justify;
+    overflow-x: hidden;
+  }
+  
+  .insquote {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .start {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .success {
+    margin: 5px;
+    padding: 2px;
+    font-family: 'Anuphan', sans-serif;
+    text-decoration: none;
+  }
+  
+  .imgsucc,
+  .gau,
+  .imgsuccal {
+    width: 80%;
+    height: auto;
+    justify-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect to images */
+  .imgsucc:hover,
+  .gau:hover,
+  .imgsuccal:hover {
+    transform: scale(1.05);
+  }
+  
+  .suc {
+    padding: 5px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 10px 20px 50px #3b3023;
+    margin-bottom: 20px; /* Reduce margin-bottom to create more space for the content */
+  }
+  
+  .s {
+    text-align: center;
+  }
+  
+  .succtext {
+    font-family: 'Anuphan', sans-serif;
+    margin: 30px;
+    font-size: 18px;
+  }
+  
+  /* Add styling for the quote-container */
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style each quote-card */
+  .quote-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .quote-card .quote {
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .quote-card .author {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* CSS for small devices */
+  @media (max-width: 800px) {
+    .suc {
+      font-size: 20px;
+      margin: 40px; /* Increase the margin to center the title */
+      margin-bottom: 30px;
+    }
+  
+    .success {
+      font-size: 16px;
+    }
+  
+    .succtext {
+      margin: 20px;
+    }
+  
+    /* Adjust quote-card styles for small devices */
+    .quote-card {
+      padding: 10px;
+    }
+  }
+  
+  /* CSS for desktop view */
+  @media (min-width: 801px) {
+    /* Add the wavy animation to the "Success" heading */
+    .suc h1.s {
+      font-size: 100px;
+      text-align: center;
+      text-shadow: 10px 20px 50px #3b3023;
+      margin-bottom: 20px;
+      /* Add the animation */
+      animation: wave 2s infinite;
+    }
+  
+    /* Define the keyframes for the wave animation */
+    @keyframes wave {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+  

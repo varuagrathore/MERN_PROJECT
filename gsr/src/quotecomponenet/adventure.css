@@ -1,0 +1,80 @@
+.Ainspire {
+    margin: 20px;
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Ainsquote {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .Astart {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Asuccess {
+    margin: 5px;
+    padding: 2px;
+    font-family: 'Anuphan', sans-serif;
+    text-decoration: none;
+  }
+  
+  .Aimgsucc,
+  .Agau,
+  .Aimgsuccal {
+    object-fit: contain;
+    width: 80%;
+    height: auto;
+    justify-items: center;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+  
+  .Asuc {
+    padding: 5px;
+    color: white;
+    font-size: 80px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    /* text-shadow: 10px 20px 50px #3b3023; */
+  }
+  
+  .adv {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .advtext {
+    font-family: 'Anuphan', sans-serif;
+    /* margin: 30px; */
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  
+  /* CSS for small devices */
+  @media (max-width: 800px) {
+    .Asuc {
+      font-size: 20px;
+      margin: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .Asuccess {
+      font-size: 16px;
+    }
+  
+    .advtext {
+      margin: 10px;
+    }
+  }
+  
